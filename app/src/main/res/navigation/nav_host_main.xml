@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_host_main"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.chaseapp.view.BaseFragment"
+        android:label="BaseFragment" >
+        <action
+            android:id="@+id/next_listviewfragment"
+            app:destination="@id/destination_listviewfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_listviewfragment"
+        android:name="com.example.chaseapp.view.ListViewFragment"
+        android:label="ListViewFragment" >
+        <action
+            android:id="@+id/next_detailviewfragment"
+            app:destination="@id/destination_deatilviewfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_deatilviewfragment"
+        android:name="com.example.chaseapp.view.DetailViewFragment"
+        android:label="DetailViewFragment" />
+</navigation>

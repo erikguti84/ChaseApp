@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable name="score_model"
+            type="com.example.chaseapp.model.ScoreModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="1dp"
+        android:background="@drawable/cardview_body">
+
+        <TextView
+            android:id="@+id/tv_school_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            android:text="@{score_model.schoolName}"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_num_of_sat_test_takers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_school_name"
+            android:layout_margin="5dp"
+            android:text="@{`SAT test takers: `+score_model.numOfSatTestTakers}"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_sat_critical_reading_avg_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_num_of_sat_test_takers"
+            android:layout_margin="5dp"
+            android:text="@{`SAT Critical reading average score: `+score_model.satCriticalReadingAvgScore}"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_sat_math_avg_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sat_critical_reading_avg_score"
+            android:layout_margin="5dp"
+            android:text="@{`SAT Math average score: `+score_model.satMathAvgScore}"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_sat_writing_avg_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_sat_math_avg_score"
+            android:layout_margin="5dp"
+            android:text="@{`SAT Writing average score: `+score_model.satWritingAvgScore}"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

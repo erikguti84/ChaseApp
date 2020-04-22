@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ChaseApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="school_location">SCHOOL LOCATION</string>
+    <string name="school_email">SCHOOL EMAIL</string>
+    <string name="school_phone_number">SCHOOL PHONE NUMBER</string>
+    <string name="school_fax_number">SCHOOL FAX NUMBER</string>
+    <string name="school_website">SCHOOL WEBSITE</string>
+    <string name="number_of_test_takers">NUMBER OF TEST TAKERS</string>
+    <string name="critical_reading_avg_score">CRITICAL READING AVG SCORE</string>
+    <string name="sat_math_avg_score">SAT MATH AVG SCORE</string>
+    <string name="sat_writing_avg_score">SAT WRITING AVG SCORE</string>
+    <string name="school_name">SCHOOL NAME</string>
+    <string name="new_york_city_public_schools">New York City Public Schools</string>
+    <string name="logo">logo</string>
+    <string name="schools">SCHOOLS</string>
+    <string name="search">SEARCH</string>
+</resources>
